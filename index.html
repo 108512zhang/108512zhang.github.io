@@ -165,6 +165,13 @@ h2{font-family:var(--serif);font-weight:500;font-size:clamp(27px,3.4vw,38px);mar
 .badge.d{background:var(--blue-soft);color:#4E6B8C}
 .doi{font-size:12.5px;color:var(--sage);border-bottom:1px solid var(--sage-soft);padding-bottom:1px;margin-left:6px}
 
+/* talk award strip */
+.award{margin-top:28px;display:flex;gap:14px;align-items:flex-start;background:#fff;
+  border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px}
+.award .badge{flex:none;margin-top:3px}
+.award p{margin:0;font-size:14.5px;color:var(--muted)}
+.award p b{color:var(--ink);font-weight:600}
+
 /* news */
 .news{margin-top:38px;display:grid;gap:0;border-left:1.5px solid var(--line);margin-left:6px}
 .news .item{position:relative;padding:0 0 26px 30px}
@@ -228,6 +235,7 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <a href="#education">Education</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
     </div>
@@ -244,7 +252,7 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="meta">
         <span><i></i>Research Centre for Herb Polysaccharides and Intestinal Immunology</span>
         <span><i></i>Hong Kong</span>
-        <span><i></i>Since 2022</span>
+        <span><i></i>At HKBU since 2022</span>
       </div>
       <div class="cta">
         <a class="btn btn-solid" href="cv.pdf" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↓</span></a>
@@ -267,9 +275,9 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
     <div class="about">
       <div>
-        <p>I am a research assistant and PhD candidate at the School of Chinese Medicine, Hong Kong Baptist University. I joined the group in April 2022.</p>
-        <p>My research is in the structural chemistry of natural polysaccharides. I use chromatographic methods together with diagnostic enzymes to check whether a sample is structurally uniform before it is used in bioactivity or materials studies, and I combine monosaccharide composition, methylation analysis, oligosaccharide profiling and 1D/2D NMR to describe structure. Alongside this, I have experience in targeted and untargeted metabolomics and in the quality evaluation of Chinese herbal materials and patent medicines.</p>
-        <p>In a recent study we characterised a commercial polygalacturonic acid reference material and identified two co-purifying polysaccharides. This matters when such materials are used as standards: some of the properties that are measured may come from the mixture rather than from a single polymer.</p>
+        <p>I am a PhD candidate at the School of Chinese Medicine, Hong Kong Baptist University. I joined the group in April 2022 as a research assistant and began my doctoral work in September 2023; I expect to submit in 2027.</p>
+        <p>My research is in the structural chemistry of natural polysaccharides. I use chromatographic methods together with diagnostic enzymes to check whether a sample is structurally uniform before it is used in bioactivity or materials studies, and I combine monosaccharide composition, methylation analysis, oligosaccharide profiling and 1D/2D NMR to describe structure. Alongside this, I have experience in targeted and untargeted metabolomics and in the quality evaluation of Chinese herbal materials.</p>
+        <p>The biological side of the work runs in two directions: how polysaccharides are degraded by the gut microbiota and what that does in models of colitis, and how they are absorbed through the intestinal lymphatics and taken up by M cells. A recent study characterised a commercial polygalacturonic acid reference material and identified two co-purifying polysaccharides — a reminder that some of the properties measured for such standards may come from the mixture rather than from a single polymer.</p>
 
         <div class="chips">
           <span class="chip">Polysaccharide structure</span>
@@ -306,24 +314,31 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
     <div class="edu">
       <div class="row">
-        <div class="when">2022.04 — present</div>
+        <div class="when">2023.09 — present</div>
         <div>
-          <h3>Research Assistant and PhD</h3>
-          <p><span class="inst">Hong Kong Baptist University</span> · School of Chinese Medicine</p>
+          <h3>PhD, Chinese Medicine</h3>
+          <p><span class="inst">Hong Kong Baptist University</span> · School of Chinese Medicine · expected 2027.06</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2022.04 — 2023.08</div>
+        <div>
+          <h3>Research Assistant</h3>
+          <p><span class="inst">Hong Kong Baptist University</span> · metabolomics workflows for serum, faeces and tissues</p>
         </div>
       </div>
       <div class="row">
         <div class="when">2018.09 — 2021.07</div>
         <div>
-          <h3>Master of Science</h3>
-          <p><span class="inst">China Academy of Chinese Medical Sciences</span></p>
+          <h3>MSc, Chinese Medicine</h3>
+          <p><span class="inst">China Academy of Chinese Medical Sciences</span> · Beijing</p>
         </div>
       </div>
       <div class="row">
         <div class="when">2014.09 — 2018.06</div>
         <div>
-          <h3>Bachelor of Science</h3>
-          <p><span class="inst">Heilongjiang University of Traditional Chinese Medicine</span></p>
+          <h3>BSc, Chinese Pharmacy</h3>
+          <p><span class="inst">Heilongjiang University of Chinese Medicine</span> · Harbin</p>
         </div>
       </div>
     </div>
@@ -353,9 +368,9 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
       <article class="card c3">
         <div class="n">03</div>
-        <h3>Function and materials</h3>
-        <p>Macrophage assays (NO, IL-6, IL-1β, TNF-α; MAPK and NF-κB) and rheology or SEM of Ca²⁺-crosslinked hydrogels are used to compare the fractions obtained from a sample.</p>
-        <div class="tags"><span>Function</span><span>RAW264.7 · Rheology</span></div>
+        <h3>Function, materials and the gut</h3>
+        <p>Macrophage assays (NO, IL-6, IL-1β, TNF-α; MAPK and NF-κB), rheology and SEM of Ca²⁺-crosslinked gels are used to compare fractions; in vivo work covers gut-microbial degradation, colitis models and intestinal lymphatic absorption.</p>
+        <div class="tags"><span>Function</span><span>RAW264.7 · Rheology · Microbiota</span></div>
       </article>
     </div>
 
@@ -368,12 +383,14 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <span class="chip">ICP-MS</span>
         <span class="chip">NMR</span>
         <span class="chip">Methylation analysis</span>
+        <span class="chip">Flow cytometry</span>
+        <span class="chip">Western blot</span>
+        <span class="chip">Confocal microscopy</span>
+        <span class="chip">Rheology · SEM</span>
         <span class="chip">Metabolomics</span>
-        <span class="chip">Molecular biology</span>
         <span class="chip">R</span>
-        <span class="chip">Origin</span>
-        <span class="chip">SigmaPlot</span>
-        <span class="chip">EndNote</span>
+        <span class="chip">Prism · Origin</span>
+        <span class="chip">ImageJ</span>
       </div>
     </div>
   </div>
@@ -383,7 +400,8 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="sec-label">Publications</div>
     <h2>Publications.</h2>
-    <p class="sec-intro">Equal contribution is marked with <sup>#</sup>. The full list is also available in the <a class="doi" href="cv.pdf" target="_blank" rel="noopener">CV</a>.</p>
+    <p class="sec-intro">15 papers, 4 as first author and 3 as co-first author. Equal contribution is marked with <sup>#</sup>; corresponding author with *.</p>
+
 
     <div class="pubs">
 
@@ -391,7 +409,7 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="idx">01</div>
         <div>
           <h3>Rhamnogalacturonan I in commercial samples of polygalacturonic acid is a functional driver: a study of isolation, structural elucidation, role in immunostimulation and hydrogel mechanics</h3>
-          <p class="auth">Zhang X., Huo C., et al.</p>
+          <p class="auth">Zhang X., Huo C., Shan P., et al.</p>
           <p class="src"><i>Food Hydrocolloids</i>, 2026, 180: 112926
             <span class="badges"><span class="badge a">First author</span></span>
             <a class="doi" href="https://doi.org/10.1016/j.foodhyd.2026.112926" target="_blank" rel="noopener">DOI</a></p>
@@ -402,15 +420,45 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="idx">02</div>
         <div>
           <h3>Enzyme diagnostic criteria for polysaccharide purity: a model study using polymer reference standards</h3>
-          <p class="auth">Zhang X., Xia J., et al.</p>
+          <p class="auth">Zhang X., Xia J., Zhang Q., et al.</p>
           <p class="src"><i>Glycoscience &amp; Therapy</i>, 2026, 2: 100037
-           <span class="badges"><span class="badge a">First author</span></span>
+            <span class="badges"><span class="badge a">First author</span></span>
             <a class="doi" href="https://doi.org/10.1016/j.glycos.2026.100037" target="_blank" rel="noopener">DOI</a></p>
         </div>
       </article>
 
       <article class="pub">
         <div class="idx">03</div>
+        <div>
+          <h3>Dynamic distribution of label-free polysaccharides after intestinal lymphatic absorption</h3>
+          <p class="auth">Zhao W., Zhang X., Shan P., et al.</p>
+          <p class="src"><i>International Journal of Biological Macromolecules</i>, 2026, 375: 153477
+            <a class="doi" href="https://doi.org/10.1016/j.ijbiomac.2026.153477" target="_blank" rel="noopener">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="idx">04</div>
+        <div>
+          <h3>Lymph-absorbed Radix Astragali polysaccharide induces IgA production through a TLR4-dependent DC–B axis to alleviate colitis</h3>
+          <p class="auth">Zhang Q., Huo C., Liu M., Zhang X., et al.</p>
+          <p class="src"><i>Phytomedicine</i>, 2026, 162: 158787
+            <a class="doi" href="https://doi.org/10.1016/j.phymed.2026.158787" target="_blank" rel="noopener">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="idx">05</div>
+        <div>
+          <h3>Identification of a commercial xylan as a microfold cell-targeting polysaccharide in vivo and in vitro</h3>
+          <p class="auth">Li J., Feng M., Chen N., Shan P., Fung H., Zhang X., et al.</p>
+          <p class="src"><i>International Journal of Biological Macromolecules</i>, 2026, 376: 153501
+            <a class="doi" href="https://doi.org/10.1016/j.ijbiomac.2026.153501" target="_blank" rel="noopener">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="idx">06</div>
         <div>
           <h3>Critical review of the criterion of polysaccharide purity</h3>
           <p class="auth">Zhang X., Li L., Fung H., Chen N., Shan P., Zhou Y., Han Q.*</p>
@@ -421,82 +469,138 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </article>
 
       <article class="pub">
-        <div class="idx">04</div>
-        <div>
-          <h3>Vancomycin-sensitive gut microbiota mediate Dendrobii β-1,4-mannan degradation and anti-colitis activity in mice</h3>
-          <p class="auth">Huo C.<sup>#</sup>, Zhang X.<sup>#</sup>, Zhang Q., et al.</p>
-          <p class="src"><i>International Journal of Biological Macromolecules</i>, 2025, 323: 147052
-            <span class="badges"><span class="badge d">Co-first author</span></span></p>
-        </div>
-      </article>
-
-      <article class="pub">
-        <div class="idx">05</div>
-        <div>
-          <h3>Strategies, techniques and applications for food authentication based on carbohydrates: a review</h3>
-          <p class="auth">Li L., Shi X., Qi S., Zhang X., Fung H., Li Q., Han Q.*</p>
-          <p class="src"><i>Carbohydrate Polymers</i>, 2024, 344: 122533</p>
-        </div>
-      </article>
-
-      <article class="pub">
-        <div class="idx">06</div>
-        <div>
-          <h3>Oligosaccharide analysis of the backbone structure of the characteristic polysaccharide of <i>Dendrobium officinale</i></h3>
-          <p class="auth">Wong T., Li L., Zhang J., Zhang Q., Zhang X., et al.</p>
-          <p class="src"><i>Food Hydrocolloids</i>, 2023, 134: 108038</p>
-        </div>
-      </article>
-
-      <article class="pub">
         <div class="idx">07</div>
         <div>
-          <h3>A method for identifying germplasm that exhibit multiple mutations in the fatty acid synthetic pathway of <i>Perilla frutescens</i></h3>
-          <p class="auth">Zhang X., Feng S., Yang W., Shen Q., Chen S.*</p>
-          <p class="src"><i>Journal of the American Oil Chemists' Society</i>, 2020, 97: 1191–1201
-            <span class="badges"><span class="badge a">First author</span></span></p>
+          <h3>Vancomycin-sensitive gut microbiota mediate <i>Dendrobii</i> β-1,4-mannan degradation and anti-colitis activity in mice</h3>
+          <p class="auth">Huo C.<sup>#</sup>, Zhang X.<sup>#</sup>, Zhang Q., et al.</p>
+          <p class="src"><i>International Journal of Biological Macromolecules</i>, 2025, 323: 147052
+            <span class="badges"><span class="badge d">Co-first author</span></span>
+            <a class="doi" href="https://doi.org/10.1016/j.ijbiomac.2025.147052" target="_blank" rel="noopener">DOI</a></p>
         </div>
       </article>
 
       <article class="pub">
         <div class="idx">08</div>
         <div>
-          <h3>Identification of copy number variation and population analysis of the sacred lotus (<i>Nelumbo nucifera</i>)</h3>
-          <p class="auth">Zhang Q.<sup>#</sup>, Zhang X.<sup>#</sup>, Liu J., Mao C., Chen S., Zhang Y., Leng L.*</p>
-          <p class="src"><i>Bioscience, Biotechnology, and Biochemistry</i>, 2020, 84: 2037–2044
-            <span class="badges"><span class="badge d">Co-first author</span></span></p>
+          <h3>Strategies, techniques and applications for food authentication based on carbohydrates: a review</h3>
+          <p class="auth">Li L., Shi X., Qi S., Zhang X., et al.</p>
+          <p class="src"><i>Carbohydrate Polymers</i>, 2024, 344: 122533
+            <a class="doi" href="https://doi.org/10.1016/j.carbpol.2024.122533" target="_blank" rel="noopener">DOI</a></p>
         </div>
       </article>
 
       <article class="pub">
         <div class="idx">09</div>
         <div>
-          <h3>The complete chloroplast genome sequence of <i>Clematis montana</i> Buch.-Ham. (Ranunculaceae) and its phylogenetic analysis</h3>
-          <p class="auth">Mao C.<sup>#</sup>, Zhang X.<sup>#</sup>, Shi J., Chen S.*</p>
-          <p class="src"><i>Mitochondrial DNA Part B</i>, 2020, 5: 2246–2247
-            <span class="badges"><span class="badge d">Co-first author</span></span></p>
+          <h3>Oligosaccharide analysis of the backbone structure of the characteristic polysaccharide of <i>Dendrobium officinale</i></h3>
+          <p class="auth">Wong T., Li L., Zhang J., Zhang Q., Zhang X., et al.</p>
+          <p class="src"><i>Food Hydrocolloids</i>, 2023, 134: 108038
+            <a class="doi" href="https://doi.org/10.1016/j.foodhyd.2022.108038" target="_blank" rel="noopener">DOI</a></p>
         </div>
       </article>
 
       <article class="pub">
         <div class="idx">10</div>
         <div>
-          <h3>Flavonoids and caffeoylquinic acids in <i>Chrysanthemum morifolium</i> Ramat flowers: a potentially rich source of bioactive compounds</h3>
-          <p class="auth">Chen S., Liu J., Dong G., Zhang X., Liu Y., Sun W., Liu A.*</p>
-          <p class="src"><i>Food Chemistry</i>, 2020, 344: 128733</p>
+          <h3>Nontarget metabolites of rhizomes of edible sacred lotus provide new insights into rhizome browning</h3>
+          <p class="auth">Hao C., Yu Y., Zhang X., Dong G., Liu Y., Chen S.</p>
+          <p class="src"><i>Journal of Food Quality</i>, 2022, 2022: 3943052
+            <a class="doi" href="https://doi.org/10.1155/2022/3943052" target="_blank" rel="noopener">DOI</a></p>
         </div>
       </article>
 
       <article class="pub">
         <div class="idx">11</div>
         <div>
+          <h3>Flavonoids and caffeoylquinic acids in <i>Chrysanthemum morifolium</i> Ramat flowers: a potentially rich source of bioactive compounds</h3>
+          <p class="auth">Chen S., Liu J., Dong G., Zhang X., et al.</p>
+          <p class="src"><i>Food Chemistry</i>, 2021, 344: 128733
+            <a class="doi" href="https://doi.org/10.1016/j.foodchem.2020.128733" target="_blank" rel="noopener">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="idx">12</div>
+        <div>
+          <h3>A method for identifying germplasm that exhibit multiple mutations in the fatty acid synthetic pathway of <i>Perilla frutescens</i></h3>
+          <p class="auth">Zhang X., Feng S., Yang W., Shen Q., Chen S.*</p>
+          <p class="src"><i>Journal of the American Oil Chemists' Society</i>, 2020, 97: 1191–1201
+            <span class="badges"><span class="badge a">First author</span></span>
+            <a class="doi" href="https://doi.org/10.1002/aocs.12417" target="_blank" rel="noopener">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="idx">13</div>
+        <div>
+          <h3>Identification of copy number variation and population analysis of the sacred lotus (<i>Nelumbo nucifera</i>)</h3>
+          <p class="auth">Zhang Q.<sup>#</sup>, Zhang X.<sup>#</sup>, Liu J., et al.</p>
+          <p class="src"><i>Bioscience, Biotechnology, and Biochemistry</i>, 2020, 84: 2037–2044
+            <span class="badges"><span class="badge d">Co-first author</span></span>
+            <a class="doi" href="https://doi.org/10.1080/09168451.2020.1786351" target="_blank" rel="noopener">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="idx">14</div>
+        <div>
+          <h3>The complete chloroplast genome sequence of <i>Clematis montana</i> Buch.-Ham. (Ranunculaceae) and its phylogenetic analysis</h3>
+          <p class="auth">Mao C.<sup>#</sup>, Zhang X.<sup>#</sup>, Shi J., Chen S.*</p>
+          <p class="src"><i>Mitochondrial DNA Part B</i>, 2020, 5: 2246–2247
+            <span class="badges"><span class="badge d">Co-first author</span></span>
+            <a class="doi" href="https://doi.org/10.1080/23802359.2020.1771225" target="_blank" rel="noopener">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="idx">15</div>
+        <div>
           <h3>Rapid determination of saponins in the honey-fried processing of <i>Rhizoma Cimicifugae</i> by near infrared diffuse reflectance spectroscopy</h3>
-          <p class="auth">Wu L., Sun Y., Yu H., Qian X., Zhang X., Wang Q., Kuang H., Cheng G.*</p>
-          <p class="src"><i>Molecules</i>, 2018, 23: 1617</p>
+          <p class="auth">Wu L., Sun Y., Yu H., Qian X., Zhang X., et al.</p>
+          <p class="src"><i>Molecules</i>, 2018, 23: 1617
+            <a class="doi" href="https://doi.org/10.3390/molecules23071617" target="_blank" rel="noopener">DOI</a></p>
         </div>
       </article>
 
     </div>
+  </div>
+</section>
+
+<section id="talks" style="background:var(--bg-lilac);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-label">Talks &amp; honours</div>
+    <h2>Presentations.</h2>
+    <p class="sec-intro">Conference work from the past year, and the fellowship that supports it.</p>
+
+    <div class="edu">
+      <div class="row">
+        <div class="when">Oct 2026</div>
+        <div>
+          <h3>Poster · CarboFuture-2026</h3>
+          <p><span class="inst">Nanchang, China</span> · Rhamnogalacturonan I in commercial polygalacturonic acid is a functional driver</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">Jul 2026</div>
+        <div>
+          <h3>Oral · 22nd Meeting of the CGCM</h3>
+          <p><span class="inst">Taiwan</span> · Structure–activity relationship of TCM polysaccharides based on upgraded enzymatic purity criteria</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">Apr 2026</div>
+        <div>
+          <h3>Oral · 5th HTM International Conference on Herbal and Traditional Medicine</h3>
+          <p><span class="inst">Bangkok, Thailand</span> · Structure–activity relationship of TCM polysaccharides based on upgraded enzymatic purity criteria</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="award">
+      <span class="badge a">Fellowship</span>
+      <p><b>Vincent &amp; Lily Woo Fellowship</b> in Memory of Dr Albert Wong, 2025 — Greater Bay Area fellowship, awarded to two students per year (HK$150,000).</p>
+    </div>
+
   </div>
 </section>
 
@@ -514,21 +618,33 @@ footer .row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </div>
       <div class="item">
         <span class="dot"></span>
-        <time>2026</time>
-        <h4>Paper accepted in <i>Glycoscience &amp; Therapy</i></h4>
-        <p>Enzyme diagnostic criteria for polysaccharide purity: a model study using polymer reference standards.</p>
+        <time>September 2026</time>
+        <h4>Paper published in <i>Food Hydrocolloids</i></h4>
+        <p>First-author study showing that the RG-I component of a commercial PGA standard drives its immunostimulation and hydrogel mechanics.</p>
+      </div>
+      <div class="item">
+        <span class="dot"></span>
+        <time>July 2026</time>
+        <h4>Oral presentation at the CGCM</h4>
+        <p>22nd Meeting of the Consortium for Globalization of Chinese Medicine, Taiwan.</p>
+      </div>
+      <div class="item">
+        <span class="dot"></span>
+        <time>April 2026</time>
+        <h4>Oral presentation at HTM2026</h4>
+        <p>5th International Conference on Herbal and Traditional Medicine, Bangkok.</p>
+      </div>
+      <div class="item">
+        <span class="dot"></span>
+        <time>2025</time>
+        <h4>Vincent &amp; Lily Woo Fellowship</h4>
+        <p>Greater Bay Area fellowship in memory of Dr Albert Wong, awarded to two students per year.</p>
       </div>
       <div class="item">
         <span class="dot"></span>
         <time>2025</time>
         <h4>Review published in <i>Carbohydrate Polymers</i></h4>
         <p>A critical discussion of how polysaccharide purity is currently described and reported.</p>
-      </div>
-      <div class="item">
-        <span class="dot"></span>
-        <time>Ongoing</time>
-        <h4>Extending the purity workflow</h4>
-        <p>Applying the enzymatic diagnostic approach to other commercial polysaccharide standards.</p>
       </div>
     </div>
   </div>
